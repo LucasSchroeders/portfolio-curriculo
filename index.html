@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index2.css" />
+    <title>Developer Schroeder</title>
+    
+</head>
+<body>
+    <nav class="header">
+        <div class="name">
+            <h1>Lucas</h1>
+            <h1 class="surname">Schroeder</h1>
+        </div>
+        <div class="menuBar">
+            <a href="#start"><p>Início</p></a>
+            <a href="#skills"><p>Habilidades</p></a>
+            <a href="#projects"><p>Projetos</p></a>
+            <a href="#about"><p>Sobre</p></a>
+            <a href="https://www.linkedin.com/in/lucas-oliveira-schroeder/" target="_blank"><p>Contato</p></a>
+        </div>
+    </nav>
+
+    <section class="background" id="start">
+        <div class="introduction">
+            <p class="text">Seja bem-vindo!</p>
+            <p class="introduction-name">Meu nome é Lucas</p>
+            <p class="text">Desenvolvedor Back-end</p>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/lucas-oliveira-schroeder/" target="_blank"><span><i class="fa-brands fa-linkedin"></i></a></span>
+                <a href="https://github.com/LucasSchroeders" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="hardSkills">
+            <h1>Habilidades técnicas</h1>
+            <h3>Tenho experiência de trabalho com Python, Django framework e com um pouco com HTML, CSS e JavaScript.</h3>
+            <div class="technologies">
+                <div class="technology">
+                    <!-- <img src="images/logo-python.png" class="logo-python" alt="Logo da linguagem de programação Python"> -->
+                    <span class="fa-brands fa-python logo" style="color: #0091ff;"></span>
+                    <p>Python</p>
+                </div>
+                <div class="technology">
+                    <!-- <img src="images/logo-django.png" class="logo-django" alt="Logo do framework Django"> -->
+                    <span class="simple-icons--django logo"></span>
+                    <p>Django</p>
+                </div>
+                <div class="technology">
+                    <!-- <img src="images/logo-html.png" class="logo-html" alt="Logo da tecnologia HTML"> -->
+                    <span class="fa-brands fa-html5 logo" style="color: #f09b24;"></span>
+                    <p>HTML</p>
+                </div>
+                <div class="technology">
+                    <!-- <img src="images/logo-css.png" class="logo-css" alt="Logo da tecnologia CSS"> -->
+                    <span class="fa-brands fa-css3-alt logo" style="color: #74C0FC;"></span>
+                    <p>CSS</p>
+                </div>
+                <div class="technology">
+                    <!-- <img src="images/logo-javascript.png" class="logo-js" alt="Logo da linguagem de programação JavaScript"> -->
+                    <span class="fa-brands fa-js logo" style="color: #FFD43B;"></span>
+                    <p>JavaScript</p>
+                </div>
+            </div>
+            <h3>Também tenho conhecimento em Java desenvolvendo projetos e desafios</h3>
+            <div class="technologies-2">
+                <div class="technology">
+                    <!-- <img src="images/logo-java.png" class="logo-java" alt="Logo da linguagem de programação Java"> -->
+                    <span class="fa-brands fa-java color logo" style="color: #ff0000;"></span>
+                    <p>Java</p>
+                </div>
+            </div>
+        </div>
+        <div class="softSkills">
+            <h1>Habilidades interpessoais</h1>
+        </div>
+    </section>
+
+    <section id="projects">
+    </section>
+
+    <section id="about">
+    </section>
+</body>
+<script>
+
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("nav");
+        header.classList.toggle("sticky", window.scrollY > 20)
+    })
+</script>
+<script src="https://kit.fontawesome.com/36d1fe7908.js" crossorigin="anonymous"></script>
+</html>
