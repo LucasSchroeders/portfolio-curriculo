@@ -11,6 +11,15 @@ body {
     height: 100vh;
 }
 
+.div-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-row{
+    display: flex;
+    flex-direction: row;
+}
 
 .header{
     position: fixed;
@@ -18,8 +27,8 @@ body {
     left: 0;
     height: 10%;
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     justify-content: space-between;
     align-items: center;
     font-weight: 900;
@@ -28,8 +37,7 @@ body {
 }
 
 .header .logo {
-    width: 80px;
-    height: 80px;
+    width: 18%;
     border-radius: 100%;
 }
 
@@ -42,14 +50,10 @@ body {
 }
 
 .name{
-    display: flex;
-    flex-direction: row;
     margin-left: 10%;
 }
 
 .menuBar{
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 30%;
     margin-right: 10%;
@@ -89,7 +93,7 @@ section {
     background-size: cover;
     content: '';
     position: absolute;
-    opacity: 0.05;
+    opacity: 0.1;
     inset: 0;
     display: flex;
     flex-direction: column;
@@ -122,10 +126,8 @@ section {
 
 .skills {
     padding: 2%;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-
+    background-image: linear-gradient( to top, #1088c093 -5%, #19191b 5%, #19191b 95%, #1088c057);
 }
 
 .skills h1,h3 {
@@ -138,8 +140,6 @@ section {
 }
 
 .technologies{
-    display: flex;
-    flex-direction: row;
     margin-right: 1%;
     justify-content: space-between;
 }
@@ -176,8 +176,6 @@ section {
 }
 
 .rowSoftSkills{
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
     margin-bottom: 5%;
 }
@@ -203,4 +201,38 @@ section {
 
 .textSoftSkill{
     text-align: justify;
+}
+
+.projects{
+    padding: 2.2% 4.5%; 
+}
+
+.projects h1{
+    margin-bottom: 2%;
+}
+
+.project{
+    width: 100%;
+    justify-content: center;
+}
+
+.projectInfos{
+    margin: 0 2%;
+}
+
+.projectInfos h2, .projectInfos .technologies{
+    color: #1088c0;
+}
+
+.projectInfos h4{
+    margin: 4% 0
+}
+
+.projectInfos h2{
+    margin-bottom: 4%
+}
+
+.projects hr{
+    border-top: 1px solid #1088c0;
+    margin: 3% 0;
 }

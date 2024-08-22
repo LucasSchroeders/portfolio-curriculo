@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index2.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Developer Schroeder</title>
     
 </head>
 <body>
-    <nav class="header">
+    <nav class="header div-row">
         <div class="name">
             <img class="logo" src="images/logo.jpg" alt="Logo">
         </div>
-        <div class="menuBar">
+        <div class="menuBar div-row">
             <a href="#start"><p>Início</p></a>
             <a href="#skills"><p>Habilidades</p></a>
             <a href="#projects"><p>Projetos</p></a>
@@ -33,12 +33,12 @@
         </div>
     </section>
 
-    <section class="skills" id="skills">
+    <section class="skills div-row" id="skills">
         <div class="hardSkills">
             <h1>Habilidades técnicas</h1>
             <h4>Tenho experiência de trabalho com Python, Django framework e um pouco com HTML, CSS e JavaScript.</h3>
             <h4>Também tenho conhecimento em Java que adquiri durante a faculdade e desenvolvendo alguns projetos.</h3>
-            <div class="technologies">
+            <div class="technologies div-row">
                 <div class="technology">
                     <span class="fa-brands fa-python logo" style="color: #0091ff;"></span>
                     <p>Python</p>
@@ -60,7 +60,7 @@
                     <p>JavaScript</p>
                 </div>
             </div>
-            <div class="technologies">
+            <div class="technologies div-row">
                 <div class="technology">
                     <span class="fa-brands fa-java color logo" style="color: #ff0000;"></span>
                     <p>Java</p>
@@ -69,7 +69,7 @@
         </div>
         <div class="softSkills">
             <h1>Habilidades interpessoais</h1>
-            <div class="rowSoftSkills">
+            <div class="rowSoftSkills div-row">
                 <div class="softSkill">
                     <h3 class="tituloSoftSkill">Trabalho em equipe</h3>
                     <h4 class="textSoftSkill">Habilidade de trabalhar de forma coloborativa em equipe, contribuindo com suas habilidades e ideias para alcançar objetivos em comuns.</h4>
@@ -81,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="rowSoftSkills">
+            <div class="rowSoftSkills div-row">
                 <div class="softSkill">
                     <h3 class="tituloSoftSkill">Comunicação eficaz</h3>
                     <h4 class="textSoftSkill">Comunicação clara e concisa ao expressar ideias.</h4>
@@ -96,6 +96,21 @@
     </section>
 
     <section id="projects">
+        <div class="projects">
+            <h1>Projetos</h1>
+
+            <div class="project div-row">
+                <img src="images/logo.jpg" alt="">
+                <div class="projectInfos div-column">
+                    <h2>Nome do projeto</h2>
+                    <h4>descricao do projeto</h4>
+                    <h4 class="technologies">tecnologias utilizadas no projeto</h4>
+                    <h4>link para ver projeto (como?)</h4>
+                </div>
+            </div>
+
+            <hr>
+        </div>
     </section>
 
     <section id="about">
