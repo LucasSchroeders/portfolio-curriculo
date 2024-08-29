@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Developer Schroeder</title>
     
 </head>
@@ -105,7 +106,7 @@
                     <h2>Nome do projeto</h2>
                     <h4>descricao do projeto</h4>
                     <h4 class="technologies">tecnologias utilizadas no projeto</h4>
-                    <h4>link para ver projeto (como?)</h4>
+                    <button onclick="abrirModal('project-notification')" id="test">link para ver projeto (como?)</button>
                 </div>
             </div>
 
@@ -141,13 +142,53 @@
             </div>
         </div>
     </section>
-</body>
-<script>
 
-    window.addEventListener("scroll", function(){
-        var header = document.querySelector("nav");
-        header.classList.toggle("sticky", window.scrollY > 20)
-    })
-</script>
+    <div class="window-modal" id="project-notification">
+        <div class="modal">
+            <div class="modal-images">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="image-modal-project">
+                              <img src="./images/inicio.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="image-modal-project">
+                              <img src="./images/logo.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="image-modal-project">
+                              <img src="./images/inicio.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="image-modal-project">
+                              <img src="./images/logo.jpg" alt="">
+                          </div>
+                        </div>
+                        
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <div class="modal-infos">
+                <button class="fechar" id="fechar-project-notification">X</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolores mollitia officiis suscipit quidem veritatis itaque consectetur minus hic perspiciatis iusto, quisquam, harum modi cupiditate id, quaerat expedita sapiente aut?</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
 <script src="https://kit.fontawesome.com/36d1fe7908.js" crossorigin="anonymous"></script>
 </html>
