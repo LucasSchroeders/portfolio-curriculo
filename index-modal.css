@@ -1,0 +1,89 @@
+
+.window-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal{
+    position: fixed;
+    width: 80%;
+    height: 70%;
+    background-color: #0c628a;
+    border-radius: 15px;
+    display: flex;
+}
+
+.window-modal.abrir{
+    display: flex;
+}
+
+.fechar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+@keyframes abrirmodal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.abrir .modal {
+    animation: abrirmodal 0.4s;
+}
+
+.modal-images {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.image-modal-project img{
+    width: 100%;
+}
+
+.swiper{
+    height: 100%;
+}
+
+.swiper-slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-infos{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-description{
+    padding-right: 1rem;
+    overflow: auto;
+}
