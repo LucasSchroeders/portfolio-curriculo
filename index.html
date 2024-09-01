@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="index-modal.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Developer Schroeder</title>
     
@@ -106,11 +107,12 @@
                     <h2>Nome do projeto</h2>
                     <h4>descricao do projeto</h4>
                     <h4 class="technologies">tecnologias utilizadas no projeto</h4>
-                    <button onclick="abrirModal('project-notification')" id="test">link para ver projeto (como?)</button>
+                    <h4 onclick="abrirModal('project-notification')" class="button-project">Ver projeto</h4>
+                    <hr>
                 </div>
             </div>
 
-            <hr>
+            <!-- <hr> -->
         </div>
     </section>
 
@@ -180,8 +182,12 @@
             </div>
 
             <div class="modal-infos">
-                <button class="fechar" id="fechar-project-notification">X</button>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolores mollitia officiis suscipit quidem veritatis itaque consectetur minus hic perspiciatis iusto, quisquam, harum modi cupiditate id, quaerat expedita sapiente aut?</p>
+                <div class="modal-fechar">
+                    <button class="fechar" id="fechar-project-notification">X</button>
+                </div>
+                <div class="modal-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolores mollitia officiis suscipit quidem veritatis itaque consectetur minus hic perspiciatis iusto, quisquam, harum modi cupiditate id, quaerat expedita sapiente aut?</p>
+                </div>
             </div>
             
         </div>
