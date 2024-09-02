@@ -93,7 +93,7 @@
     overflow: auto;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 800px) {
     .modal{
         display: flex;
         flex-direction: column;
@@ -121,4 +121,10 @@
         padding-top: 0.75em;
         padding-right: 0.75em;
     }
+}
+
+@media screen and (min-width: 801px) and (max-width:1000px) {
+    .modal .div-row{
+        height: auto;
+    } 
 }

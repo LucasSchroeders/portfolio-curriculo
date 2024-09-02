@@ -327,8 +327,8 @@ section {
     cursor: pointer;
 }
 
-/* MOBILE */
-@media screen and (max-width: 450px) {
+/* MOBILE AND TABLETS */
+@media screen and (max-width: 800px) {
     /* HEADER */
     .header{
         position: absolute;
@@ -417,5 +417,39 @@ section {
 
     .div-icons .icon{
         font-size: 40px;
+    }
+}
+
+/*  NOTEBOOKS 1000PX */
+@media screen and (min-width: 801px) and (max-width: 1000px){
+    .skills{
+        padding: 2em 0;
+    }
+    .projects, .about, .footer{
+        padding: 2em 2em ; 
+    }
+
+    .name{
+        margin-left: 2rem;
+    }
+    .menuBar{
+        margin-right: 2rem;
+        width: 60%;
+    }
+
+    .technologies .technology{
+        width: 3.8em;
+    }
+
+    .technology .logo{
+        font-size: 3em;
+    }
+
+    .technology p{
+        font-size: 12px;
+    }
+
+    .softSkill{
+        width: 12em;
     }
 }

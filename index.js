@@ -1,6 +1,6 @@
 const screenWidth = window.screen.width;
 
-if (screenWidth > 1024) {
+if (screenWidth > 800) {
     window.addEventListener('scroll', function(){
         var header = document.querySelector('nav');
         header.classList.toggle('sticky', window.scrollY > 20)
