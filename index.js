@@ -7,6 +7,8 @@ if (screenWidth > 800) {
     })
 }
 
+
+
 function abrirModal(modalName){
     const modal = document.getElementById(modalName)
     const header = document.querySelector('nav')
@@ -19,6 +21,9 @@ function abrirModal(modalName){
         if(e.target.id == fechar || e.target.id == modalName){
             modal.classList.remove('abrir')
             header.style.position = 'fixed'
+            if ( screenWidth <= 800){
+                header.style.position = 'absolute'
+            }
         }
     })
 }

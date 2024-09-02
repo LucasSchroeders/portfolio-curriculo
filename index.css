@@ -334,6 +334,10 @@ section {
         position: absolute;
     }
 
+    .name{
+        margin-left: 2rem;
+    }
+
     .menuBar {
         display: none;
     }
