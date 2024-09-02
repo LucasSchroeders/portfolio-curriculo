@@ -92,3 +92,33 @@
     padding-right: 1rem;
     overflow: auto;
 }
+
+@media screen and (max-width: 450px) {
+    .modal{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .modal .div-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-images {
+        width: 100%;
+        padding: 0.5em 0.5em;
+    }
+
+    .fechar{
+        width: 30px;
+        height: 30px;
+        top: 20;
+        left: 50;
+    }
+
+    .modal-fechar{
+        padding-top: 0.75em;
+        padding-right: 0.75em;
+    }
+}

@@ -1,7 +1,11 @@
-window.addEventListener('scroll', function(){
-    var header = document.querySelector('nav');
-    header.classList.toggle('sticky', window.scrollY > 20)
-})
+const screenWidth = window.screen.width;
+
+if (screenWidth > 1024) {
+    window.addEventListener('scroll', function(){
+        var header = document.querySelector('nav');
+        header.classList.toggle('sticky', window.scrollY > 20)
+    })
+}
 
 function abrirModal(modalName){
     const modal = document.getElementById(modalName)
