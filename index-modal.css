@@ -19,10 +19,15 @@
     background-color: #0c628a;
     border-radius: 15px;
     display: flex;
+    flex-direction: column;
 }
 
 .window-modal.abrir{
     display: flex;
+}
+
+.modal-fechar{
+    padding: 0.75em;
 }
 
 .fechar{
@@ -59,7 +64,7 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
 }
 
 .image-modal-project img{
