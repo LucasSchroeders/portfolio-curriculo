@@ -59,7 +59,7 @@ body {
 }
 
 .header .logo {
-    width: 18%;
+    width: 4em;
     border-radius: 100%;
 }
 
@@ -72,13 +72,13 @@ body {
 }
 
 .name{
-    margin-left: 10%;
+    margin-left: 8rem;
 }
 
 .menuBar{
-    justify-content: space-between;
-    width: 30%;
-    margin-right: 10%;
+    justify-content: space-around;
+    min-width: 50%;
+    margin-right: 8rem;
     font-size: 20px;
 }
 
@@ -131,7 +131,6 @@ section {
 }
 .introduction p{
     margin-bottom: 1%;
-    /* background-color: #1088c0; */
 }
 
 .introduction .text {
@@ -208,12 +207,11 @@ section {
 }
 
 .softSkill {
-    height: 10em;
+    min-height: 10em;
     width: 40%;
     border: 3px solid #1088c0;
     border-radius: 3%;
     padding: 1%;
-    
 }
 
 .softSkill:hover{
