@@ -57,12 +57,17 @@
     animation: abrirmodal 0.4s;
 }
 
+.modal-div-row{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
 .modal-images {
-    width: 50%;
-    height: auto;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     padding: 0 2rem 2rem 2rem;
 }
@@ -93,6 +98,10 @@
     overflow: auto;
 }
 
+.modal-description p:not(:last-child){
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 800px) {
     .modal{
         display: flex;
@@ -100,7 +109,7 @@
         height: 80%;
     }
 
-    .modal .div-row{
+    .modal-div-row{
         display: flex;
         flex-direction: column;
     }
@@ -124,7 +133,7 @@
 }
 
 @media screen and (min-width: 801px) and (max-width:1000px) {
-    .modal .div-row{
+    .modal-div-row{
         height: auto;
     } 
 }
