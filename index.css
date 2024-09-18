@@ -242,6 +242,11 @@ section {
     justify-content: center;
 }
 
+.project img{
+    width: 800px;
+    border: 3px solid #1088c0;
+}
+
 .projectInfos{
     margin: 0 2%;
 }
@@ -417,6 +422,9 @@ section {
 
     .project img{
         margin-bottom: 1em;
+        width: 340px;
+        border: 2px solid #1088c0;
+        align-self: center;
     }
 
     .div-icons .icon{
@@ -455,5 +463,21 @@ section {
 
     .softSkill{
         width: 12em;
+    }
+
+    .project img{
+        margin-bottom: 1em;
+        width: 500px;
+        border: 3px solid #1088c0;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1180px){
+    .project img{
+        margin-bottom: 1em;
+        width: 600px;
+        border: 3px solid #1088c0;
+        align-self: center;
     }
 }
