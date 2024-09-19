@@ -223,10 +223,10 @@ section {
     text-align: center;
     margin-bottom: 5%;
 }
-
+/* 
 .textSoftSkill{
-    text-align: justify;
-}
+    text-align:;
+} */
 
 /* PROJECTS */
 .projects, .about, .footer{
@@ -263,26 +263,41 @@ section {
     margin-bottom: 4%
 }
 
-.projects hr{
+/* .projects hr{
     border-top: 1px solid #1088c0;
     margin: 3% 0;
-}
+} */
 
 .button-project{
-    width: 7em;
-    /* border-bottom: 1px solid #1088c0; */
+    width: 10em;
     cursor: pointer;
+}
+
+.button-project:hover{
+    font-size: 20px;
+}
+
+.icon-play{
+    margin-right: 5px;
 }
 
 .projectInfos hr{
     border-top: 1px solid #1088c0;
     margin: 0;
-    width: 7em;
+    width: 10em;
 }
 
 /* ABOUT */
 .about{
     background: linear-gradient(to bottom right, rgba(16,136,192, 0.8) 0%, rgba(5, 78, 112, 0.8) 10%, rgba(25,25,27,1) 20%, rgba(25,25,27,1) 80%, rgba(5, 78, 112, 0.8) 90%, rgba(16,136,192, 0.8) 100%);
+}
+
+.about h1{
+    margin-bottom: 7px;
+}
+
+.about h4{
+    line-height: 1.6
 }
 
 /* FOOTER */
@@ -425,6 +440,10 @@ section {
         width: 340px;
         border: 2px solid #1088c0;
         align-self: center;
+    }
+
+    .button-project:hover{
+        font-size: 16px;
     }
 
     .div-icons .icon{
