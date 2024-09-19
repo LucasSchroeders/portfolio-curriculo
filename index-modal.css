@@ -102,6 +102,10 @@
     margin-bottom: 10px;
 }
 
+.modal-link:hover{
+    font-size: 20px;
+}
+
 @media screen and (max-width: 800px) {
     .modal{
         display: flex;
@@ -130,10 +134,17 @@
         padding-top: 0.75em;
         padding-right: 0.75em;
     }
+
+    .modal-link:hover{
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 801px) and (max-width:1000px) {
     .modal-div-row{
         height: auto;
-    } 
+    }
+    .modal-link:hover{
+        font-size: 16px;
+    }
 }
